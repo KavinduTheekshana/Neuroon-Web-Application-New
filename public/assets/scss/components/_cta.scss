@@ -1,0 +1,71 @@
+/*Cta Css*/
+.cta__area {
+    .cta__btns {
+        @include d-flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 490px) {
+            flex-direction: column;
+        }
+        .site-btn {
+            padding: 0px 38px;
+            position: relative;
+            z-index: 2;
+        }
+        .transparent {
+            margin-left: 30px;
+            border-color: $transparent-border;
+            &:hover {
+                border-color: $theme-color;
+            }
+            @media (max-width: 490px) {
+                margin-top: 20px;
+                margin-left: 0;
+            }
+        }
+    }
+    &--2 {
+        .text-right {
+            @include respond(lg) {
+                text-align: left !important;
+                .site-btn {
+                    margin-top: 00px;
+                }
+            }
+        }
+    }
+    &--3 {
+        padding-bottom: 700px;
+        position: relative;
+        z-index: 1;
+        @include respond(xs) {
+            padding-bottom: 300px;
+        }
+        @include respond(sm) {
+            padding-bottom: 600px;
+        }
+        &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            background-image: url(../../assets/images/bg/cta-shape.png);
+            background-position: top center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 60%;
+            z-index: -1;
+            @include respond(xs) {
+                height: 70%;
+            }
+            @include respond(sm) {
+                height: 70%;
+            }
+        }
+    }
+    &--4 {
+        padding-top: 340px;
+        padding-bottom: 240px;
+    }
+}

@@ -1,0 +1,209 @@
+/*Testimonial css*/
+
+.testimonials {
+    position: relative;
+    border-bottom: 5px solid $theme-color;
+    background: $white;
+    .owl-dots {
+        position: absolute;
+        top: 60px;
+        right: 50px;
+        @include d-flex;
+        align-items: center;
+        @include respond(xs) {
+            top: 35px;
+            right: 30px;
+        }
+        div {
+            width: 8px;
+            height: 8px;
+            background: $grey-light-2;
+            @include transition(.3s);
+            &:not(:last-child) {
+                margin-right: 14px;
+            }
+            &:hover {
+                background: $theme-color;
+            }
+        }
+        .active {
+            background: $theme-color;
+        }
+    }
+}
+
+.testimonial {
+    font-family: $roboto;
+    position: relative;
+    padding: 50px;
+    p {
+        line-height: 28px;
+    }
+    .thumb {
+        img {
+            width: auto !important;
+        }
+    }
+    .title {
+        font-size: 24px;
+        @media (max-width: 430px) {
+            padding-right: 100px;
+        }
+    }
+    .quote-icon {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: auto !important;
+        @include respond(xs) {
+            width: 120px !important;
+        }
+    }
+    @include respond(xs) {
+        padding: 20px;
+    }
+}
+
+.authore {
+    &--content {
+        position: relative;
+        z-index: 2;
+        .name {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .designatin {
+            color: $theme-color;
+            font-weight: 700;
+            font-family: $roboto;
+        }
+    }
+}
+
+.testimonials {
+    &__2 {
+        .testimonial {
+            background: $white;
+            position: relative;
+            border-bottom: 5px solid $theme-color;
+            padding: 45px;
+            @include respond(laptop) {
+                padding: 40px 35px;
+            }
+            @include respond(lg) {
+                padding: 40px 35px;
+            }
+            p {
+                line-height: 28px;
+                font-size: 18px;
+                position: relative;
+                z-index: 1;
+                @include respond(laptop) {
+                    font-size: 16px;
+                }
+                @include respond(lg) {
+                    font-size: 16px;
+                }
+            }
+            .quote-icon {
+                bottom: 25px;
+                right: 30px;
+            }
+        }
+        .owl-item {
+            background: $white;
+            position: relative;
+            .testimonial {
+                position: relative;
+                border-color: transparent;
+                opacity: .4;
+                @include respond(md) {
+                    opacity: 1;
+                }
+            }
+        }
+        .owl-item.center {
+            .testimonial {
+                opacity: 1;
+                border-color: $theme-color;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__3 {
+        .testimonial {
+            @include respond(xs) {
+                padding: 35px 20px;
+            }
+            @include respond(sm) {
+                padding: 40px 35px;
+            }
+            .title {
+                @include respond(xs) {
+                    font-size: 22px;
+                }
+                @include respond(sm) {
+                    font-size: 24px;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+        .owl-item {
+            .testimonial {
+                border-color: $theme-color-light;
+                opacity: 1;
+                .quote-icon {
+                    opacity: .40;
+                    right: 20px;
+                    bottom: 20px;
+                }
+            }
+        }
+        .owl-item.center {
+            .testimonial {
+                opacity: 1;
+                border-color: $theme-color;
+                background: $grey;
+                .quote-icon {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &__4 {
+        .owl-item.center {
+            .testimonial {
+                background: $white;
+                .quote-icon {
+                    opacity: 1;
+                }
+            }
+        }
+        .owl-item {
+            .testimonial {
+                background: $grey;
+            }
+        }
+    }
+}
+
+.testimonial__area {
+    &--2 {
+        padding-left: 60px;
+        padding-right: 60px;
+        @include respond(sm) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @include respond(xs) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}
+

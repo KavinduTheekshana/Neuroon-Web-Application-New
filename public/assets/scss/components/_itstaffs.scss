@@ -1,0 +1,86 @@
+/*itstaffs css*/
+.itstaffs-area {
+    background: $theme-color;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itstaffs__btns {
+    @include d-flex;
+    align-items: center;
+    @include respond(sm) {
+        flex-direction: row;
+    }
+    @include respond(xs) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .site-btn {
+        background: $theme-color-dark;
+        &:hover {
+            background: $white;
+            color: $primary-color;
+            border-color: $white;
+            span {
+                color: $primary-color;
+            }
+        }
+    }
+    .transparent {
+        background: transparent;
+        margin-left: 20px;
+        border-color: $transparent-border-3;
+        @include respond(xs) {
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.itstaffs-wrap {
+    .banner__rightbox {
+        @include respond(lg) { 
+            @include d-flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+        @include respond(sm) { 
+            @include d-flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+        @include respond(xs) { 
+            display: block;
+            margin-top: 30px;
+        }
+        margin-left: 0px;
+        &--item {
+            @include d-flex;
+            align-items: center;
+            @include respond(lg) {
+                padding-right: 30px;
+            }
+            @include respond(xs) {
+                border: none;
+            }
+            &:nth-child(2) {
+                @include respond(lg) {
+                    margin-top: 0px;
+                    margin-left: 0px;
+                }
+                @include respond(md) {
+                    margin-left: 30px;
+                }
+                @include respond(xs) {
+                    margin-top: 30px;
+                    margin-left: 0px;
+                }
+            }
+            .content {
+                padding-left: 20px;
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+        }
+    }
+}

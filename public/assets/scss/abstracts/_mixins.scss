@@ -1,0 +1,82 @@
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin border-radius($property) {
+  border-radius: $property;
+  -webkit-border-radius: $property;
+  -moz-border-radius: $property;
+  -ms-border-radius: $property;
+  -o-border-radius: $property;
+}
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+
+@mixin flexWidth($property) {
+  flex: 0 0 $property;
+  -ms-flex: 0 0 $property;
+  max-width: $property;
+}
+
+@mixin d-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@mixin shadow1 {
+  box-shadow: 0px -5px 26px -5px #cdd4e7;
+}
+@mixin placeholder($value) {
+  &::-webkit-input-placeholder {
+    color: $value;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: $value;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: $value;
+    opacity: 1;
+  }
+  &:-moz-placeholder {
+    color: $value;
+    opacity: 1;
+  }
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==laptop {
+        @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+            @content;
+        }
+    }
+    @if $breakpoint==lg {
+        @media (max-width: 1199px) {
+            @content;
+        }
+    }
+    @if $breakpoint==md {
+        @media (max-width: 991px) {
+            @content;
+        }
+    }
+    @if $breakpoint==xs {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @if $breakpoint==sm {
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            @content;
+        }
+    }
+}

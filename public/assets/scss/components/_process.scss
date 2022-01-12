@@ -1,0 +1,74 @@
+/*Process box css*/
+.process__box {
+    @include transition(.3s);
+    &--thumb {
+        position: relative;
+        &::after {
+            position: absolute;
+            background-image: -moz-linear-gradient( 90deg, rgba(8,106,216,0.8) 0%, rgba(8,106,216,0) 100%);
+            background-image: -webkit-linear-gradient( 90deg, rgba(8,106,216,0.8) 0%, rgba(8,106,216,0) 100%);
+            background-image: -ms-linear-gradient( 90deg, rgba(8,106,216,0.8) 0%, rgba(8,106,216,0) 100%);
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            @include transition(.3s);
+        }
+        .site-btn {
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            text-align: center;
+            width: 200px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(.5);
+            opacity: 0;
+            visibility: hidden;
+            &:hover {
+                background: $white;
+                color: $primary-color;
+                span {
+                    color: $primary-color;
+                }
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &--content {
+        padding: 35px 55px;
+        background: $grey-light-3;
+        text-align: center;
+        @include respond(sm) {
+            padding: 35px 55px;
+        }
+        @include respond(xs) {
+            padding: 35px 40px;
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-family: $roboto;
+            line-height: 26px;
+        }
+    }
+    &:hover {
+        .process__box--thumb { 
+            &::after {
+                background-color: $theme-color;
+                opacity: 0.9;
+                visibility: visible;
+            }
+            .site-btn {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+    }
+}

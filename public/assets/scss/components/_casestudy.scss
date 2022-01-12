@@ -1,0 +1,65 @@
+/*Casestudy Css*/
+
+.casestudy-area {
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.casestudy__box {
+    position: relative;
+    &--thumb {
+        overflow: hidden;
+        img {
+            @include transition(.3s);
+            width: 100%;
+        }
+    }
+    &:hover &--thumb img {
+        transform: scale(1.1);
+    }
+    &--content {
+        background: $white;
+        padding: 25px;
+        width: calc(100% - 50px);
+        box-shadow: 0px 8px 16px 0px rgba(102, 102, 102, 0.04);
+        margin: 0 auto;
+        margin-top: -45px;
+        position: relative;
+        z-index: 2;
+        @include transition(.4s);
+        &::after,&::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: $theme-color;
+            height: 0px;
+            width: 2px;
+            content: "";
+            opacity: 0;
+            visibility: hidden;
+            @include transition(.4s);
+        }
+        &::before {
+            left: auto;
+            right: 0;
+        }
+        .sub-title{
+            color: $theme-color;
+            font-weight: 700;
+            font-family: $roboto;
+            font-size: 14px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+    &:hover &--content{
+        &::after,&::before {
+            opacity: 1;
+            visibility: visible;
+            height: 42px;
+        }
+    }
+}

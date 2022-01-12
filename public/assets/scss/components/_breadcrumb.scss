@@ -1,0 +1,71 @@
+/*breadcrumb css*/
+.breadcrumb {
+    margin-bottom: 0px;
+    border-radius: 0px;
+    @include respond(xs) {
+        padding-bottom: 90px;
+    }
+    &__wrap {
+        position: relative;
+        @include respond(xs) {
+            text-align: center;
+        }
+    }
+    .title {
+        font-size: 72px;
+        color: $white;
+        font-weight: 500;
+        letter-spacing: -3px;
+        @include respond(md) {
+            text-align: center;
+        }
+        @include respond(xs) {
+            font-size: 40px;
+        }
+        @include respond(sm) {
+            font-size: 50px;
+        }
+    }
+    &__nav {
+        background: $white;
+        padding: 17px 50px;
+        position: absolute;
+        right: 0;
+        bottom: -150px;
+        @include respond(md) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @include respond(xs) {
+            position: inherit;
+            display: inline-block;
+            left: 0;
+            transform: translateX(0%);
+            bottom: -90px;
+            padding: 18px 30px;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            li { 
+                color: $primary-color;
+                text-transform: uppercase;
+                font-weight: 500;
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+                a {
+                    color: $primary-color;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+                span {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

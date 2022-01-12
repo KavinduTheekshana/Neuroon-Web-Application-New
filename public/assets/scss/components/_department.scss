@@ -1,0 +1,102 @@
+/*department css*/
+.department__wrap {
+    padding: 60px 65px;
+    position: relative;
+    background: $white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 29, 35, 0.04);
+    position: relative;
+    margin-top: -80px;
+    z-index: 2;
+    &::after,&::before {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 40px);
+        height: 20px;
+        content: "";
+        bottom: -20px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 29, 35, 0.04);
+    }
+    @include respond(xs) {
+        padding: 40px 20px;
+    }
+    &--2 {
+        margin-top: 0px;
+        margin-bottom: -100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 29, 35, 0.1);
+        z-index: 2;
+        &::after,&::before {
+            z-index: 1;
+            background: $white;
+            opacity: 0.102;
+            box-shadow: none;
+        }
+        &::before {
+            bottom: -40px;
+            width: calc(100% - 80px);
+            opacity: 0.059;
+        }
+    }
+}
+
+.department__box {
+    @include d-flex;
+    position: relative;
+    @include respond(sm) {
+        flex-direction: row;
+    }
+    @include respond(xs) {
+        flex-direction: column;
+    }
+    &--icon {
+        @include flexWidth(11%);
+        @include respond(sm) {
+            @include flexWidth(11%);
+        }
+        @include respond(xs) {
+            @include flexWidth(100%);
+        }
+    }
+    &--content {
+        padding-left: 30px;
+        @include flexWidth(89%);
+        @include respond(sm) {
+            @include flexWidth(89%);
+            padding-left: 30px;
+        }
+        @include respond(xs) {
+            @include flexWidth(100%);
+            padding-left: 0px;
+            margin-top: 30px;
+        }
+        .title {
+            font-size: 24px;
+        }
+    }
+    &--border {
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100px;
+            width: 2px;
+            background: $border-dark-4;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            @include respond(lg) {
+                display: none;
+            }
+        }
+    }
+}
+
+.department__box.pr-50 {
+    @include respond(lg) {
+        padding-right: 0px;
+    }
+}
+.department__box.pl-50 {
+    @include respond(lg) {
+        padding-left: 0px;
+    }
+}

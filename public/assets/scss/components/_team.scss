@@ -1,0 +1,209 @@
+/*Team scss*/
+
+.team-area {
+    .section__heading {
+        @include respond(xs) {
+            padding-right: 120px;
+        }
+    }
+    padding-bottom: 80px;
+}
+
+.team-carousel {
+    .owl-nav {
+        @include d-flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: -160px;
+        @include respond(md) {
+            top: -130px;
+        }
+        div {
+            font-size: 18px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border: 2px solid $grey-light-5;
+            text-align: center;
+            @include transition(.3s);
+            @include respond(xs) {
+                font-size: 16px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+            }
+            &:hover {
+                color: $white;
+                background: $theme-color;
+                border-color: $theme-color;
+            }
+        }
+        div.owl-next { 
+            margin-left: 20px;
+        }
+    }
+    .owl-stage-outer {
+        padding-bottom: 20px;
+    }
+}
+
+.team__box {
+    text-align: center;
+    @include transition(.3s);
+    .thumb {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    .social__icons {
+        background: $theme-color;
+        padding: 0px 10px;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        margin-left: 35px;
+        margin-right: 35px;
+        width: calc(100% - 70px);
+        left: 0;
+        a {
+            font-size: 14px;
+            height: auto;
+            width: auto;
+            line-height: 14px;
+            background: transparent;
+            margin: 0px;
+            padding: 18px 10px;
+        }
+        @include transform(scale(.8));
+        @include transition(.3s);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .content {
+        padding: 24px 0px;
+        .designation {
+            color: $theme-color;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: $roboto;
+            text-transform: uppercase;
+        }
+        .name {
+            font-size: 20px;
+        }
+    }
+    &:hover {
+        .social__icons {
+            @include transform(scale(1));
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &:hover {
+        box-shadow: 0px 8px 16px 0px rgba(0, 29, 35, 0.04);
+    }
+}
+
+.details__lists {
+    ul {
+        li {
+            font-size: 18px;
+            font-family: $roboto;
+            &:not(:last-child) {
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid #E7E7E7;
+            }
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    &--2 {
+        background: $white;
+        border-top: 4px solid $theme-color;
+        padding-top: 54px;
+        padding-bottom: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.team-details-wrap {
+    background: $grey;
+    padding: 40px;
+    @include respond(xs) {
+        padding: 15px;
+    }
+    @include respond(sm) {
+        padding: 30px;
+    }
+    .thumb {
+        img {
+            width: 100%;
+        }
+        @include respond(lg) {
+            margin-bottom: 30px;
+        }
+    }
+    .content {
+        .title {
+            font-size: 40px;
+            margin-bottom: 30px;
+            @include respond(xs) {
+                font-size: 30px;
+            }
+            @include respond(sm) {
+                font-size: 40px;
+            }
+        }
+    }
+    .social__links {
+        @include d-flex;
+        align-items: center;
+        a {
+            font-size: 18px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            color: $white;
+            text-align: center;
+            @include respond(xs) {
+                font-size: 16px;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+            }
+            @include respond(sm) {
+                font-size: 18px;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+            }
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+            &.fb {
+                background: #3B5999;
+            }
+            &.tw {
+                background: #55ACEE;
+            }
+            &.db {
+                background: #0057FF;
+            }
+            &.bh {
+                background: #0077B5;
+            }
+            &.yt {
+                background: #CD201F;
+            }
+            &:hover {
+                background: $primary-color;
+                color: $white;
+            }
+        }
+    }
+}

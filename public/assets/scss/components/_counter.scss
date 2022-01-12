@@ -1,0 +1,27 @@
+/*Counter css*/
+
+.counter__wrap {
+    padding: 60px 70px;
+    background: $primary-color;
+    &--2 {
+        margin-bottom: -100px;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.counter__box {
+    .title {
+        color: $white;
+        font-size: 16px;
+        .big {
+            font-size: 60px;
+            font-weight: 500;
+            color: $white;
+            line-height: 60px;
+        }
+    }
+    p {
+        color: $white;
+    }
+}

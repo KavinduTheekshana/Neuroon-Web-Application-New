@@ -1,0 +1,94 @@
+/*Support css*/
+.support__area {
+    background: $primary-color;
+    &--2 {
+        padding-top: 235px;
+    }
+    &--3 {
+        background: $grey;
+        .text-right {
+            @include respond(md) {
+                text-align: left !important;
+            }
+        }
+    }
+}
+
+.custom-row {
+    margin-left: -10px;
+    margin-right: -10px;
+    .col-xl-2 {
+        @include flexWidth(20%);
+        padding-left: 10px;
+        padding-right: 10px;
+        @include respond(lg) {
+             @include flexWidth(33.3333%);
+        }
+        @include respond(xs) {
+             @include flexWidth(100%);
+        }
+        @include respond(sm) {
+             @include flexWidth(50%);
+        }
+    }
+}
+
+
+.support__box {
+    padding: 50px 30px;
+    text-align: center;
+    border: 2px solid $border-dark-6;
+    @include transition(.3s);
+    .icon {
+        margin-bottom: 25px;
+        .hover {
+            display: none;
+        }
+    }
+    .title {
+        font-size: 20px;
+        color: $white;
+        margin-bottom: 15px;
+    }
+    .content {
+        p {
+            font-family: $roboto;
+            font-size: 14px;
+            color: $white;
+        }
+    }
+    &:hover {
+        background: $theme-color;
+        border-color: $theme-color;
+        .icon {
+            .hover {
+                display: inline-block;
+            }
+            .default {
+                display: none;
+            }
+        }
+    }
+    &--2 {
+        border: none;
+        background: $white;
+        .title {
+            color: $primary-color;
+        }
+        .content {
+            p {
+                color: $primary-color;
+            }
+        }
+        &:hover {
+            .title {
+                color: $white;
+            }
+            .content {
+                p {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

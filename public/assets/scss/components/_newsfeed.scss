@@ -1,0 +1,155 @@
+/*Newsfeed css*/
+.newsfeedwrap {
+    margin-left: 40px;
+    @include respond(lg) {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+    @include respond(md) {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+    &--2 {
+        margin-left: 20px;
+        @include respond(md) {
+            margin-left: 0px;
+        }
+    }
+    &--3 {
+        margin-left: 0px;
+        margin-right: 40px;
+        @include respond(lg) {
+            margin-right: 0px;
+            margin-top: 0px;
+        }
+    }
+}
+
+.news__item {
+    &:not(:last-child) {
+        padding-bottom: 30px;
+        border-bottom: 1px solid $border-dark-3;
+    }
+    @include d-flex;
+    align-items: center;
+    .thumb {
+        overflow: hidden;
+        img {
+            @include transition(.3s);
+        }
+        @include flexWidth(140px);
+        @include respond(xs) {
+            @include flexWidth(100px);
+        }
+        @media (max-width: 530px) {
+            @include flexWidth(100%);
+        }
+    }
+    .content {
+        @include flexWidth(73%);
+        padding-left: 30px;
+        @include respond(xs) {
+            padding-left: 15px;
+            @include flexWidth(80%);
+        }
+        @media (max-width: 530px) {
+            @include flexWidth(100%);
+            padding-left: 0px;
+            margin-top: 20px;
+        }
+        .meta {
+            @include d-flex;
+            align-items: center;
+            margin-bottom: 10px;
+            li:not(:last-child) {
+                margin-right: 30px;
+            }
+            a {
+                display: block;
+                color: $primary-color;
+                font-weight: 500;
+                font-family: $cerebri;
+                i {
+                    color: $theme-color;
+                    margin-right: 10px;
+                }
+                &:hover {
+                    color: $theme-color;
+                }
+                @include respond(xs) {
+                    font-size: 14px;
+                }
+            }
+        }
+        .title {
+            font-size: 20px;
+            @include respond(xs) {
+                font-size: 18px;
+            }
+            @include respond(sm) {
+                font-size: 20px;
+            }
+            a {
+                color: $primary-color;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    &:hover {
+        img {
+            @include transform(scale(1.1));
+        }
+    }
+    &--transparent {
+        display: block;
+        position: relative;
+        .thumb {
+            @include flexWidth(100%);
+            &::before {
+                z-index: 1;
+            }
+        }
+        .content {
+            @include flexWidth(100%);
+            padding-left: 0px;
+            position: absolute;
+            bottom: 0;
+            padding: 40px 40px;
+            padding-top: 0px;
+            width: 100%;
+            z-index: 2;
+            @include respond(xs) {
+                padding: 20px;
+            }
+            @include respond(sm) {
+                padding: 40px;
+            }
+            .title {
+                font-size: 28px;
+                font-weight: 500;
+                @include respond(xs) {
+                    font-size: 18px;
+                }
+                @include respond(sm) {
+                    font-size: 28px;
+                }
+                a {
+                    color: $white;
+                }
+            }
+            .meta {
+                a {
+                    color: $white;
+                    @include respond(xs) {
+                        font-size: 14px;
+                    }
+                    @include respond(sm) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

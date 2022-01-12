@@ -1,0 +1,253 @@
+/*Timeline css*/
+.timeline-area {
+    background: $primary-color;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.timeline {
+    position: relative;
+    padding: 60px 0px;
+    @include respond(xs) {
+        padding-bottom: 0px;
+    }
+    @include respond(sm) {
+        padding-bottom: 60px;
+    }
+    &::after {
+        position: absolute;
+        left: 50%;
+        transform: translateX(50%);
+        width: 2px;
+        background: $transparent-border-4;
+        height: 100%;
+        content: "";
+        top: 0;
+        @include respond(md) { 
+            left: 60px;
+            transform: translateX(0%);
+        }
+        @include respond(xs) { 
+            display: none;
+        }
+        @include respond(sm) { 
+            left: 20px;
+            transform: translateX(0%);
+            display: inline-block;
+        }
+    }
+    .shape {
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        background: $transparent-border-4;
+        left: 50%;
+        transform: translateX(-18px);
+        top: 0;
+        @include respond(md) {
+            left: 60px;
+        }
+        @include respond(xs) { 
+            display: none;
+        }
+        @include respond(sm) {
+            left: 20px;
+            display: inline-block;
+        }
+        &--2 {
+            top: auto;
+            bottom: 0;
+        }
+    }
+    &__box {
+        position: relative;
+        width: 100px;
+        margin: 0 auto 380px;
+        @include respond(md) {
+            margin: 0px;
+            margin-bottom: 380px;
+            margin-left: 10px;
+        }
+        @include respond(xs) {
+            margin-bottom: 90px;
+            width: auto;
+            margin-left: 0px;
+            @include d-flex;
+            justify-content: center;
+        }
+        @include respond(sm) {
+            margin-left: -70px;
+        }
+        .year {
+            font-size: 20px;
+            font-weight: 500;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            color: $white;
+            border: 2px solid $transparent-border-4;
+            background: $primary-color;
+            border-radius: 50%;
+            z-index: 1;
+            position: relative;
+            line-height: 100px;
+            display: inline-block;
+            @include transition(.3s);
+            @include respond(xs) {
+                display: none;
+            }
+            @include respond(sm) {
+                font-size: 16px;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                display: inline-block;
+            }
+            &::after {
+                right: -75px;
+                font-size: 30px;
+                color: $transparent-border-4;
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+                content: "\f061";
+                font-family: "Font Awesome 5 Pro";
+                font-weight: 300;
+                @include transition(.3s);
+                @include respond(lg) {
+                    right: -50px;
+                }
+            }
+        }
+        &--inner {
+            position: absolute;
+            width: 400px;
+            right: -537px;
+            top: 50%;
+            margin-top: -52px;
+            @include respond(lg) {
+                right: -435px;
+            }
+            @include respond(md) {
+                right: -500px;
+            }
+            @include respond(xs) {
+                position: inherit;
+                right: 0;
+                width: auto;
+            }
+            @include respond(sm) {
+                right: -50px;
+                width: 400px;
+            }
+        }
+        .thumb {
+            padding: 0px 30px;
+            margin-bottom: -60px;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            @include respond(xs) {
+                text-align: center;
+            }
+        }
+        .content {
+            background: $primary-color-4;
+            padding: 90px 40px;
+            padding-bottom: 40px;
+            text-align: center;
+            color: $white;
+            position: relative;
+            @include transition(.3s);
+            z-index: 1;
+            .title {
+                font-size: 24px;
+                color: $white;
+                margin-bottom: 15px;
+            }
+            p {
+                color: $white;
+            }
+            .number {
+                font-size: 160px;
+                position: absolute;
+                right: 5px;
+                letter-spacing: -3px;
+                bottom: 0px;
+                font-weight: 700;
+                line-height: 100px;
+                z-index: -1;
+                font-family: $cerebri;
+                color: $white;
+                opacity: 0;
+                visibility: hidden;
+                @include transition(.3s);
+            }
+        }
+        &:nth-child(3) {
+            .timeline__box--inner .number {
+                right: -15px !important;
+            }
+        }
+        &:nth-child(2n+2) .timeline__box--inner {
+            right: auto;
+            left: -537px;
+            @include respond(lg) {
+                left: -435px;
+            }
+            @include respond(md) {
+                right: -500px;
+                left: auto;
+            }
+            @include respond(xs) {
+                right: 0;
+            }
+            @include respond(sm) {
+                right: -50px;
+            }
+        }
+        &:nth-child(2n+2) .year {
+            &::after {
+                content: "\f060";
+                right: auto;
+                left: -75px;
+                @include respond(lg) {
+                    left: -50px;
+                }
+                @include respond(md) {
+                    content: "\f061";
+                    left: auto;
+                    right: -50px;
+                }
+            }
+        }
+        &:hover {
+            .year {
+                background: $theme-color;
+                border-color: $theme-color;
+                &::after {
+                    color: $theme-color;
+                }
+            }
+            .content {
+                background: $theme-color;
+            }
+            .number {
+                opacity: .06;
+                visibility: visible;
+                bottom: 15px;
+            }
+        }
+        &:last-child {
+            @include respond(md) {
+                    margin-bottom: 320px;
+            }
+            @include respond(xs) {
+                    margin-bottom: 0px;
+            }
+            @include respond(sm) {
+                    margin-bottom: 0px;
+            }
+        }
+    }
+}

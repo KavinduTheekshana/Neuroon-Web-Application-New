@@ -1,0 +1,183 @@
+/*Integration Css*/
+.integration__area {
+    background: $primary-color;
+    @include respond(xs) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.integration {
+    border: 1px solid $border-dark-5;
+    padding-top: 50px;
+    padding-bottom: 45px;
+    margin-left: 45px;
+    border-radius: 196px;
+    position: relative;
+    @include respond(laptop) {
+        margin-left: 0px;
+    }
+    @include respond(lg) {
+        margin-left: 0px;
+    }
+    @include respond(xs) {
+        border-radius: 0px;
+        border: none;
+    }
+    &__content {
+        p {
+            color: $white;
+            line-height: 28px;
+            font-family: $roboto;
+        }
+    }
+    &__btns {
+        @include d-flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 490px) {
+            flex-direction: column;
+        }
+        .site-btn {
+            padding: 0 38px;
+            &:hover {
+                color: $primary-color;
+                background: $white;
+                span {
+                    color: $primary-color;
+                }
+            }
+        }
+        .transparent {
+            margin-left: 30px;
+            color: $white;
+            border-color: $border-dark-5;
+            @media (max-width: 490px) {
+                margin-top: 20px;
+                margin-left: 0;
+            }
+            span {
+                color: $white;
+            }
+            &:hover {
+                background: $theme-color;
+                color: $white;
+                span {
+                    color: $white;
+                }
+            }
+        }
+    }
+    
+    @include respond(xs) { 
+        padding-bottom: 0px;
+    }
+}
+
+.integration__icon {
+    @include respond(xs) {
+        @include d-flex;
+        margin-top: 50px;
+        justify-content: center;
+    }
+}
+
+.integration__icons {
+    &--box {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+        text-align: center;
+        line-height: 100px;
+        background: $white;
+        color: $theme-color;
+        @include transition(.3s);
+        z-index: 2;
+        @include respond(md) {
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            font-size: 20px;
+        }
+        @include respond(xs) {
+            position: inherit;
+            left: 0;
+            bottom: 0;
+            @include flexWidth(33.3333%);
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+            line-height: 100px;
+            margin: 7.5px;
+        }
+        &:hover {
+            color: $white;
+            background: $theme-color;
+        }
+        &:nth-child(1), &:nth-child(3), &:nth-child(4) {
+            top: -25px;
+            left: 75px;
+            @include respond(xs) { 
+                top: 0px;
+            }
+        }
+        &:nth-child(2), &:nth-child(5) {
+            transform: translateY(-50%);
+            top: 50%;
+            left: -50px;
+            @media (max-width: 1275px) { 
+                left: -10px;
+            }
+            @include respond(lg) {
+                left: -50px;
+            }
+            @media (max-width: 1065px) { 
+                left: 0px;
+            }
+            @include respond(md) {
+                left: -20px;
+            }
+            @include respond(xs) { 
+                left: 0px;
+                top: 0px;
+                transform: translateY(0%);
+            }
+        }
+        &:nth-child(3), &:nth-child(6) {
+            bottom: -25px;
+            top: auto;
+            @include respond(xs) { 
+                bottom: 0px;
+            }
+        }
+        &:nth-child(4), &:nth-child(4) {
+            left: auto;
+            right: 75px;
+            @include respond(xs) { 
+                right: 0px;
+            }
+        }
+        &:nth-child(5) {
+            left: auto;
+            right: -50px;
+            @media (max-width: 1275px) { 
+                left: auto;
+                right: -10px;
+            }
+            @include respond(lg) {
+                right: -50px;
+            }
+            @media (max-width: 1065px) { 
+                right: 0px;
+            }
+            @include respond(md) {
+                right: -20px;
+            }
+        }
+        &:nth-child(6) {
+            left: auto;
+            right: 75px;
+        }
+    }
+}

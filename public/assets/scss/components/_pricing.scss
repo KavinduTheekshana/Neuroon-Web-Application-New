@@ -1,0 +1,148 @@
+/*Pricing css*/
+.pricing {
+    &__head {
+        background: $grey;
+        padding: 28px 40px;
+        @include d-flex;
+        align-items: center;
+        justify-content: space-between;
+        @include transition(.3s);
+        @include respond(xs) {
+            padding: 28px 20px;
+        }
+        @include respond(sm) {
+            padding: 28px 40px;
+        }
+        .title {
+            font-size: 24px;
+        }
+        .price {
+            color: $theme-color;
+            font-size: 50px;
+            line-height: 50px;
+            span {
+                font-size: 14px;
+                color: $theme-color;
+                font-weight: 500;
+            }
+        }
+        .site-btn {
+            padding: 0px 25px;
+            height: 50px;
+            line-height: 50px;
+            background: $white;
+            color: $primary-color;
+            &:hover {
+                color: $white;
+                background: $primary-color;
+            }
+        }
+    }
+    &__lists {
+        padding: 40px;
+        border: 2px solid $grey;
+        border-top: 0px;
+        text-decoration: none;
+        @include respond(xs) {
+            padding: 30px 20px;
+        }
+        @include respond(sm) {
+            padding: 40px 40px;
+        }
+        li {
+            @include d-flex;
+            align-items: center;
+            font-weight: 500;
+            text-decoration: none;
+            .icon {
+                @include flexWidth(40px);
+                border: 2px solid $border-dark-2;
+                margin-right: 30px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: $theme-color;
+                @include transition(.3s);
+            }
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            &:nth-child(5),&:nth-child(6) {
+                opacity: .40;
+            }
+            &:hover {
+                .icon {
+                    background: $theme-color;
+                    color: $white;
+                    border-color: $theme-color;
+                }
+            }
+        }
+        &.bl-0 {
+            @include respond(lg) {
+                border-left: 2px solid $grey !important;
+            }
+        }
+        &.br-0 {
+            @include respond(md) {
+                border-right: 2px solid $grey !important;
+            }
+        }
+    }
+    &__bottom {
+        @include d-flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        .icon {
+            width: 45px;
+            height: 45px;
+            border: 2px solid $green;
+            line-height: 45px;
+            text-align: center;
+            margin-bottom: 15px;
+            color: $green;
+            @include transition(.3s);
+        }
+        h5 {
+            font-size: 20px;
+            color: $green;
+        }
+        &:hover {
+            .icon {
+                background: $green;
+                color: $white;
+                border-color: $green;
+            }
+        }
+    }
+    &.active {
+        .pricing__head {
+            background: $theme-color;
+        }
+        .title {
+            color: $white;
+        }
+        .price {
+            color: $white;
+            span {
+                color: $white;
+            }
+        }
+        .site-btn {
+            background: $white;
+            &:hover {
+                color: $white;
+                background: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+    }
+    &.spacial {
+        .pricing__lists {
+            li {
+                opacity: 1;
+            }
+        }
+    }
+} 

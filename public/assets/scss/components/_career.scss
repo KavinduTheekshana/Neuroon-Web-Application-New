@@ -1,0 +1,112 @@
+/*Careers css*/
+.career__bg {
+    position: relative;
+    img {
+        @include respond(md) {
+            width: 100%;
+        }
+    }
+    .site-btn {
+        font-size: 36px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0px 92px;
+        min-height: 120px;
+        line-height: 120px;
+        @include respond(xs) {
+            padding: 0px 45px;
+            font-size: 24px;
+            min-height: 80px;
+            line-height: 80px;
+        }
+        @include respond(sm) {
+            padding: 0px 92px;
+            min-height: 120px;
+            line-height: 120px;
+        }
+    }
+}
+
+.job__lists {
+    .item {
+        @include d-flex;
+        align-items: center;
+        padding: 30px 50px;
+        justify-content: space-between;
+        @include respond(lg) {
+            padding: 20px 30px;
+        }
+        @include respond(md) {
+           align-items: center;
+        }
+        &:nth-child(2n+1) {
+            background: $grey;
+        }
+        .status {
+            @include flexWidth(15%);
+            @include respond(md) {
+                @include flexWidth(100%);
+            }
+        }
+        .location {
+            @include flexWidth(20%);
+            @include respond(lg) {
+                @include flexWidth(21%);
+            }
+            @include respond(md) {
+                @include flexWidth(100%);
+            }
+        }
+        .title {
+            font-size: 24px;
+            @include flexWidth(50%);
+            @include respond(lg) {
+                font-size: 20px;
+                @include flexWidth(45%);
+            }
+            @include respond(md) {
+                @include flexWidth(100%);
+            }
+        }
+        .site-btn {
+            padding: 0px 35px;
+            background: $white;
+            color: $primary-color;
+            @include flexWidth(15%);
+            @include respond(lg) {
+                @include flexWidth(19%);
+            }
+            @include respond(md) {
+                @include flexWidth(160px);
+                position: absolute;
+                right: 40px;
+            }
+            @include respond(xs) {
+                @include flexWidth(160px);
+                position: inherit;
+                right: auto;
+                left: 0;
+                margin-top: 10px;
+            }
+            &:hover {
+                color: $white;
+                background: $theme-color;
+            }
+        }
+        span {
+            font-family: $cerebri;
+            font-weight: 500;
+        }
+        &:nth-child(2n+2) {
+            .site-btn {
+                background: $grey;
+                &:hover {
+                    color: $white;
+                    background: $theme-color;
+                }
+            }
+        }
+    }
+}

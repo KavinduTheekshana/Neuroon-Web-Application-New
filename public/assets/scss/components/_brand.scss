@@ -1,0 +1,28 @@
+/*Brand css*/
+.brand__carousel {
+    padding: 0px 105px;
+    @include respond(xs) {
+        margin-top: 50px;
+        padding: 0px 0px;
+    }
+    @include respond(sm) {
+        margin-top: 70px;
+        padding: 0px 80px;
+    }
+    .brand {
+        min-height: 120px;
+        @include d-flex;
+        justify-content: center;
+        align-items: center;
+        filter: grayscale(100);
+        @include transition(.3s);
+        opacity: .2;
+        img {
+            width: auto;
+        }
+        &:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+    }
+}

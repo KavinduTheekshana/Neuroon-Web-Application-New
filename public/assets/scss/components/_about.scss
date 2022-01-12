@@ -1,0 +1,413 @@
+/*About css*/
+.about__area {
+    overflow-x: hidden;
+    @include respond(md) {
+        background: $grey;
+        overflow-x: auto;
+    }
+    &--2 {
+        background-repeat: no-repeat;
+        @include respond(laptop) { 
+            background-position: right;
+        }
+    }
+    &--3 {
+        .mt-65 {
+            @include respond(lg) {
+                margin-top: 0px;
+            }
+        }
+        @include respond(md) {
+            background: $white;
+            padding-bottom: 90px;
+        }
+    }
+    &--4 {
+        background: $white;
+    }
+    &--5 {
+        position: relative;
+        overflow: hidden;
+        &::after {
+            background-image: url(../../assets/images/bg/about-bg-5.jpeg);
+            left: 0;
+            height: 100%;
+            width: 40%;
+            content: "";
+            position: absolute;
+            background-size: cover;
+            background-position: center center;
+            top: 0;
+            @include respond(md) {
+                display: none;
+            }
+        }
+        .pr-80 {
+            @include respond(lg) {
+                padding-right: 20px;
+            }
+            @include respond(md) {
+                padding-right: 50px;
+            }
+        }
+    }
+    &--6 {
+        padding: 100px 200px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        @include respond(laptop) {
+            padding: 100px 50px;
+            padding-top: 0px;
+        }
+        @include respond(lg) {
+            padding: 100px 50px;
+            padding-top: 0px;
+        }
+        @include respond(xs) {
+            padding: 100px 0px;
+            padding-top: 0px;
+        }
+        @include respond(sm) {
+            padding: 100px 30px;
+            padding-top: 0px;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    &--7 {
+        .pr-55 {
+            @include respond(md) {
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+.about__wrap {
+    position: inherit;
+    &::before {
+        background: $grey;
+        width: 190%;
+        @include respond(md) {
+            width: auto;
+        }
+    }
+    &--2 {
+        padding: 100px 0px;
+        background: $grey;
+        margin: 55px 0px;
+        padding-bottom: 90px;
+        @include respond(md) {
+            margin: 0px 0px;
+        }
+        &::before {
+            width: 100%;
+            background: transparent;
+        }
+        &::after {
+            width: 4px;
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            background: $theme-color;
+            @include respond(md) {
+                display: none;
+            }
+        }
+    }
+    &--3 {
+        padding: 0px;
+        margin: 0px;
+    }
+    &--4 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @include respond(md) {
+            padding-bottom: 0px;
+        }
+        .site-btn {
+            margin-top: 40px;
+        }
+    }
+}
+
+
+.about__bg {
+    transform: translateX(-175px);
+    position: relative;
+    @include respond(lg) {
+        transform: translateX(-100px);
+    }
+    @include respond(md) {
+        transform: translateX(0px);
+        margin-bottom: 50px;
+    }
+    img {
+        max-width: initial;
+        @include respond(lg) {
+            max-width: 115%;
+        }
+        @include respond(md) {
+            max-width: 100%;
+        }
+    }
+    &--2 {
+        transform: translateX(0px);
+        margin-top: -10px;
+        img {
+            @media (max-width: 1355px) {
+                max-width: 100%;
+            }
+        }
+        @include respond(md) {
+            margin-top: 50px;
+        }
+    }
+    &--3 {
+        padding-left: 30px;
+        position: relative;
+        margin-top: 0px;
+        .call-box {
+            position: absolute;
+            border: 6px solid $white;
+            padding: 24px;
+            background: $theme-color;
+            color: $white;
+            text-align: left;
+            padding-right: 55px;
+            padding-left: 30px;
+            bottom: -40px;
+            left: -55px;
+            @include respond(lg) {
+                left: 20px;
+            }
+            @include respond(sm) {
+                left: 20px;
+            }
+            @include respond(xs) {
+                left: 0px;
+            }
+            span {
+                display: block;
+                color: $white;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+            }
+            a {
+                color: $white;
+                font-size: 30px;
+                @include respond(sm) {
+                    font-size: 28px;
+                }
+                @include respond(xs) {
+                    font-size: 24px;
+                }
+            }
+            img {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        @include respond(lg) {
+            margin-top: 50px;
+            text-align-last: left;
+            padding-left: 0px;
+        }
+    }
+    &--4 {
+        transform: translateX(0px);
+        padding-right: 25px;
+        overflow: hidden;
+        margin-top: 0px;
+        @include respond(xs) {
+            text-align: center;
+            width: 100%;
+            padding-right: 0px;
+            margin-bottom: 0px;
+        }
+        @include respond(sm) {
+            text-align: left;
+            width: auto;
+            padding-right: 25px;
+        }
+        img {
+            &:nth-child(2) {
+                margin-top: -130px;
+                position: relative;
+                z-index: 1;
+                @include respond(xs) {
+                    margin-top: 30px;
+                }
+                @include respond(sm) {
+                    margin-top: -130px;
+                }
+            }
+            &.f-right {
+                @include respond(xs) {
+                    float: none;
+                }
+                @include respond(sm) {
+                    float: right;
+                }
+            }
+        }
+    }
+    &--5 {
+        margin-left: 0px;
+        margin-right: 40px;
+        padding-left: 0px;
+        margin-top: 0px;
+        @include respond(lg) {
+            margin-right: 0px;
+            margin-top: 0px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &--6 {
+        margin-top: 0px;
+        @include transform(translateX(0px));
+        @include respond(lg) {
+            min-height: 600px;
+            background-size: cover;
+            background-position: center top;
+        }
+        @include respond(xs) {
+            min-height: 450px;
+            background-size: cover;
+            background-position: center top;
+        }
+        @include respond(sm) {
+            min-height: 500px;
+        }
+    }
+    &--7 {
+        margin-top: 0px;
+        @include transform(translateX(0px));
+        margin-right: 40px;
+        @include respond(md) {
+            min-height: 450px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.about__box {
+    &--item {
+        background: $white;
+        padding: 40px;
+        position: relative;
+        &::after {
+            height: 4px;
+            width: 0%;
+            left: 100%;
+            background: $theme-color;
+            content: "";
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            bottom: 0;
+            @include transition(.4s);
+        }
+        &:hover::after {
+            left: 0;
+            width: 100%;
+            opacity: 1;
+            visibility: visible;
+            -webkit-transition: width 0.4s ease;
+            -o-transition: width 0.4s ease;
+            transition: width 0.4s ease;
+        }
+        
+    }
+    &--content {
+        margin-top: 25px;
+        font-size: 14px;
+        p {
+            line-height: 26px;
+        }
+    }
+    &--title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    &--2 {
+        padding-right: 25px;
+        .site-btn {
+            padding: 0px 36px;
+        }
+    }
+    &--3 {
+        padding-right: 65px;
+        .nav {
+            margin-bottom: 25px;
+            margin-top: -15px;
+            li {
+                margin-top: 15px;
+                a {
+                    padding: 0px;
+                    color: $primary-color;
+                    padding-bottom: 15px;
+                    border-bottom: 2px solid $border-light-3;
+                    padding-right: 15px;
+                    font-weight: 500;
+                    font-family: $cerebri;
+                    &:hover {
+                        border-color: $theme-color;
+                        color: $theme-color;
+                    }
+                }
+                a.active {
+                    border-color: $theme-color;
+                    color: $theme-color;
+                }
+                &:not(:first-child) {
+                    a {
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            p {
+                font-family: $roboto;
+                line-height: 28px;
+            }
+        }
+    }
+    &--4 {
+        padding-right: 0px;
+        .nav {
+            li {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+                a {
+                    border: none;
+                    font-family: $roboto;
+                    padding: 18px 41px !important;
+                    font-weight: 700;
+                    background: $grey;
+                    text-align: center;
+                    &:hover {
+                        background: $theme-color;
+                        color: $white;
+                    }
+                }
+                a.active {
+                    background: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+

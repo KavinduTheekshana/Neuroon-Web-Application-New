@@ -1,0 +1,175 @@
+/*Why choose css*/
+
+.whychoose__box {
+    position: relative;
+    @include transition(.3s);
+    .thumb-wrap {
+        position: relative;
+    }
+    .thumb {
+        overflow: hidden;
+        img {
+            @include transition(.3s);
+            width: 100%;
+        }
+    }
+    .cat {
+        position: absolute;
+        width: calc(100% - 40px);
+        background: $white;
+        box-shadow: 0px 8px 16px 0px rgba(102, 102, 102, 0.04);
+        padding: 26px 33px;
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include d-flex;
+        align-items: center;
+        justify-content: center;
+        @include transition(.3s);
+        @media (max-width: 400px) {
+            flex-direction: column;
+            padding: 15px;
+        }
+        .icon {
+            color: $theme-color;
+            font-size: 20px;
+            margin-right: 15px;
+            @media (max-width: 400px) {
+                margin-right: 0px;
+                margin-bottom: 5px;
+            }
+        }
+        .cat-ttile {
+            font-size: 20px;
+        }
+        &__inner {
+            @include d-flex;
+            align-items: center;
+            margin-bottom: 10px;
+            @media (max-width: 400px) {
+                flex-direction: column;
+                padding: 0px;
+            }
+            .icon {
+                color: $theme-color;
+                font-size: 20px;
+                margin-right: 15px;
+                @media (max-width: 400px) {
+                    margin-right: 0px;
+                    margin-bottom: 5px;
+                }
+            }
+            .cat-ttile {
+                font-size: 20px;
+            }
+        }
+    }
+    .content {
+        padding: 20px 30px;
+        line-height: 28px;
+        padding-top: 25px;
+        width: calc(100% - 40px);
+        background: $white;
+        margin: 0 auto;
+        margin-top: -105px;
+        position: relative;
+        text-align: left !important;
+        opacity: 0;
+        visibility: hidden;
+        font-size: 14px;
+        @include transition(.3s);
+        @include transform(translateY(10px));
+        box-shadow: 0px 8px 16px 0px rgba(102, 102, 102, 0.04);
+        line-height: 24px;
+        .inline-btn {
+            margin-top: 12px;
+            font-family: $roboto;
+            font-weight: 700;
+        }
+    }
+    &:hover {
+        .thumb {
+            img {
+                transform: scale(1.1);
+            }
+        }
+        .cat {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0px);
+        }
+    }
+    &--2 {
+        padding: 50px 30px;
+        border: 2px solid $border-dark-3;
+        position: relative;
+        @include transition(.3s);
+        z-index: 1;
+        .icon {
+            font-size: 40px;
+            color: $theme-color;
+            @include transition(.3s);
+        }
+        .content {
+            padding: 0px;
+            opacity: 1;
+            visibility: visible;
+            width: 100%;
+            margin-top: 25px;
+            background: transparent;
+            @include transform(translateY(0px));
+            .title {
+                color: $primary-color;
+                font-size: 18px;
+                margin-bottom: 15px;
+                @include transition(.3s);
+            }
+            p {
+                font-size: 14px;
+                line-height: 24px;
+                @include transition(.3s);
+            }
+        }
+        .big-text {
+            font-size: 200px;
+            font-family: $cerebri;
+            font-weight: 700;
+            letter-spacing: -3px;
+            position: absolute;
+            top: 0;
+            right: -1px;
+            line-height: 151px;
+            z-index: -1;
+            color: $white;
+            opacity: 1;
+            visibility: hidden;
+            @include transition(.3s);
+        }
+        &:hover {
+            background: $theme-color;
+            border-color: $theme-color;
+            .icon {
+                color: $white;
+            }
+            .content {
+                @include transform(translateY(0px));
+                .title {
+                    color: $white;
+                }
+                p {
+                    color: $white;
+                }
+            }
+            .big-text {
+                visibility: visible;
+                opacity: 1;
+                color: $theme-color-light-2;
+            }
+        }
+    }
+}
+

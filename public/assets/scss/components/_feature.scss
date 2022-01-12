@@ -1,0 +1,32 @@
+/*Feature css*/
+.feature__box {
+    position: relative;
+    padding: 40px;
+    border-top: 3px solid transparent;
+    background: $white;
+    z-index: 1;
+    @include transition(.3s);
+    .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        span {
+            color: $theme-color;
+        }
+    }
+    .icon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        opacity: 1;
+        visibility: hidden;
+        z-index: -1;
+        @include transition(.2s);
+    }
+    &:hover {
+        border-color: $theme-color;
+        .icon {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
