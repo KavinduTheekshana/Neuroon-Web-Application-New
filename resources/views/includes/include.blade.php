@@ -97,7 +97,7 @@
                                 <li><a href="mailto:info@webmail.com"><span class="icon"><i
                                                 class="fal fa-envelope"></i></span> info@neuroon.lk</a></li>
                                 <li><a href="tel:9878768648765"><span class="icon"><i class="fal fa-phone"></i></span>
-                                        +94 71 251 5020 | +94 71 399 6549</a></li>
+                                        +94 71 251 5020</a></li>
                             </ul>
                         </div>
                     </div>
@@ -134,15 +134,22 @@
                         <div class="header__menu">
                             <nav id="mobile-menu">
                                 <ul>
-                                    <li><a href="contact.html">Home</a></li>
-                               
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="about.html">Services</a></li>
-                                    <li><a href="about.html">Blog</a></li>
-                                 
-                                  
-                                    
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="/"
+                                            class="{{ Request::segment(1) === null ? 'active' : null }}">Home</a></li>
+
+                                    <li><a href="about"
+                                            class="{{ Request::segment(1) === 'about' ? 'active' : null }}">About</a>
+                                    </li>
+                                    {{-- <li><a href="about.html">Services</a></li> --}}
+                                    <li><a href="portfolio" class="{{ Request::segment(1) === 'portfolio' ? 'active' : null }}">Portfolio</a></li>
+                                    <li><a href="why" class="{{ Request::segment(1) === 'why' ? 'active' : null }}">Why us</a></li>
+                                    <li><a href="blog" class="{{ Request::segment(1) === 'blog' ? 'active' : null }}">Blog</a></li>
+
+
+
+                                    <li><a href="contact"
+                                            class="{{ Request::segment(1) === 'contact' ? 'active' : null }}">Contact</a>
+                                    </li>
                                 </ul>
                             </nav>
                             <div class="mobile-menu"></div>

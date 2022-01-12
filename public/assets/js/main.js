@@ -340,7 +340,7 @@
 			zoom: 13,
 			scrollwheel: false,
 			// The latitude and longitude to center the map (always required)
-			center: new google.maps.LatLng(23.7031006, 90.4596732), // New York
+			center: new google.maps.LatLng(6.8494213, 79.9936292), // New York
 			// This is where you would paste any style found on Snazzy Maps.
 			styles: [{
 				"stylers": [{
@@ -371,11 +371,13 @@
 
 		// Let's also add a marker while we're at it
 		var marker = new google.maps.Marker({
-			position: new google.maps.LatLng(23.7031006, 90.4596732),
+			position: new google.maps.LatLng(6.8494213, 79.9936292),
 			map: map,
 			title: 'Cryptox'
 		});
 	}
+	// https://www.google.com/maps?q=6.8494213,79.9936292&z=17&hl=en
+	// https://www.google.com/search?q=studio%20nr&oq=studio+nr&aqs=chrome..69i57j0i10i433i457j0i402l2j0i10l6.608j0j7&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AOaemvIl3mDQFAJD7jzece1-3n97X2hfgw:1642007732189&rflfq=1&num=10&rldimm=16829825660138810272&lqi=CglzdHVkaW8gbnJaCyIJc3R1ZGlvIG5ykgENZGVzaWduX2FnZW5jeQ&ved=2ahUKEwiDsOG826z1AhWRTmwGHe8ZCJMQvS56BAgEEDM&rlst=f#rlfi=hd:;si:16829825660138810272,l,CglzdHVkaW8gbnJaCyIJc3R1ZGlvIG5ykgENZGVzaWduX2FnZW5jeQ;mv:[[6.9864892251470465,80.15322610331422],[6.7284533530877555,79.63824197245485],null,[6.857488758216206,79.89573403788454],12]
 	if ($('#contact-map').length != 0) {
 		google.maps.event.addDomListener(window, 'load', basicmap);
 	}

@@ -4164,7 +4164,7 @@ input.form-control-sm {
 }
 .about__box--4 .nav li a.active {
   background: #00CE62;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 /*Why choose css*/
@@ -4372,7 +4372,7 @@ input.form-control-sm {
 .whychoose__box--2:hover .big-text {
   visibility: visible;
   opacity: 1;
-  color: #1171DE;
+  color: #03DD65;
 }
 
 /*Video area css*/
@@ -9649,4 +9649,8 @@ input.form-control-sm {
   width: 50px !important;
   height: 8px !important;
   border-radius: 5px !important;
+}
+
+.active{
+  color: #00CE62 !important;
 }
