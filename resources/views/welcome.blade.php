@@ -12,7 +12,7 @@
                         <div class="bannertext">
                             <h5 class="subheading mb-10"><span class="mr-10">//</span>Best IT Solution provider</h5>
                             <h1 class="heading">Advanced <br>Innovative <br>IT Solutions<span>.</span></h1>
-                            <p>We run all kinds of IT services that vowsuccess</p>
+                            <p style="letter-spacing: 2px">Let’s create impactful digital products</p>
                             <div class="buttons mt-35">
                                 <a href="contact.html" class="site-btn">Get In Touch <span>+</span></a>
                                 <a href="about.html" class="site-btn transparent">Learn More <span>+</span></a>
@@ -91,8 +91,7 @@
                                 <div class="icon">
                                     <img src="assets/images/icons/webmasterpice-2.png" alt="">
                                 </div>
-                                <span>Retina Ready
-                                Display</span>
+                                <span>Web & Cloud Application</span>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 align-self-center">
@@ -118,10 +117,9 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 text-center">
                     <div class="section__heading white mb-60">
-                        <h4 class="section__heading--title-small"><span class="mr-10">//</span>services<span class="ml-10">//</span></h4>
+                        <h4 class="section__heading--title-small"><span class="mr-10">//</span>HIRE US, WHY NOT<span class="ml-10">//</span></h4>
                         <h1 class="section__heading--transparent">Hire Us</h1>
-                        <h2 class="section__heading--title">IT Services & Support
-                        For Business<span>.</span></h2>
+                        <h2 class="section__heading--title">Why Choose Us<span>.</span></h2>
                     </div>
                 </div>
             </div>
@@ -239,7 +237,7 @@
                         <img src="assets/images/bg/about-bg-2.jpeg" alt="">
                         <div class="call-box">
                             <span>Call Us Anytime!</span>
-                            <a href="tel:98768768768677">+9876 876 876 867 7</a>
+                            <a href="tel:+94 71 251 5020">+94 71 251 5020</a>
                             <img src="assets/images/icons/call-icon.png" alt="" class="icon">
                         </div>
                     </div>
@@ -503,7 +501,7 @@
  <section class="itstaffs-area pt-95 pb-95 bg_img" data-background="assets/images/pattern/map-pattern.png">
     <div class="container">
         <div class="row">
-            <div class="col-xl-7">
+            <div class="col-xl-9">
                 <div class="section__heading white mb-40">
                     <h4 class="section__heading--title-small">vailable for 8 hours a day!</h4>
                     <h2 class="section__heading--title">Obtaining Further Information
@@ -515,7 +513,7 @@
                     <a href="contact.html" class="site-btn white transparent">Make A Call <span><i class="fal fa-phone"></i></span></a>
                 </div>
             </div>
-            <div class="col-xl-4 offset-xl-1">
+            {{-- <div class="col-xl-4 offset-xl-1">
                 <div class="itstaffs-wrap">
                     <div class="banner__rightbox">
                         <div class="banner__rightbox--item mr-30">
@@ -542,7 +540,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
@@ -550,6 +548,7 @@
 
     <!-- case study area start -->
     <section class="casestudy-area pt-95 pb-100 bg_img" data-background="assets/images/pattern/case-study-pattern.png">
+   
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-7 text-center">
@@ -560,8 +559,10 @@
                     </div>
                 </div>
             </div>
+     
             <div class="row mt-none-30">
-                <div class="col-xl-4 col-lg-6 mt-30">
+               
+                {{-- <div class="col-xl-4 col-lg-6 mt-30">
                     <div class="casestudy__box">
                         <div class="casestudy__box--thumb">
                             <img src="assets/images/service/case-study-1.jpeg" alt="">
@@ -582,19 +583,137 @@
                             <h4 class="title">Kesemiro App Solution</h4>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 mt-30">
-                    <div class="casestudy__box">
-                        <div class="casestudy__box--thumb">
-                            <img src="assets/images/service/case-study-3.jpeg" alt="">
+                </div> --}}
+
+
+                <div class="swiper mySwiper">
+                
+                 
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="col-xl-12 col-lg-6 mt-30">
+                            <div class="casestudy__box">
+                                <div class="casestudy__box--thumb">
+                                    <img src="assets/images/service/case-study-3.jpeg" alt="">
+                                </div>
+                                <div class="casestudy__box--content">
+                                    <h5 class="sub-title">Web Solutions</h5>
+                                    <h4 class="title">Kesemiro Web Solution</h4>
+                                </div>
+                            </div>
                         </div>
-                        <div class="casestudy__box--content">
-                            <h5 class="sub-title">Web Solutions</h5>
-                            <h4 class="title">Kesemiro Web Solution</h4>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="col-xl-12 col-lg-6 mt-30">
+                            <div class="casestudy__box">
+                                <div class="casestudy__box--thumb">
+                                    <img src="assets/images/service/case-study-3.jpeg" alt="">
+                                </div>
+                                <div class="casestudy__box--content">
+                                    <h5 class="sub-title">Web Solutions</h5>
+                                    <h4 class="title">Kesemiro Web Solution</h4>
+                                </div>
+                            </div>
                         </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="col-xl-12 col-lg-6 mt-30">
+                            <div class="casestudy__box">
+                                <div class="casestudy__box--thumb">
+                                    <img src="assets/images/service/case-study-3.jpeg" alt="">
+                                </div>
+                                <div class="casestudy__box--content">
+                                    <h5 class="sub-title">Web Solutions</h5>
+                                    <h4 class="title">Kesemiro Web Solution</h4>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+
+                      <div class="swiper-slide">
+                        <div class="col-xl-12 col-lg-6 mt-30">
+                            <div class="casestudy__box">
+                                <div class="casestudy__box--thumb">
+                                    <img src="assets/images/service/case-study-3.jpeg" alt="">
+                                </div>
+                                <div class="casestudy__box--content">
+                                    <h5 class="sub-title">Web Solutions</h5>
+                                    <h4 class="title">Kesemiro Web Solution</h4>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+
+                      <div class="swiper-slide">
+                        <div class="col-xl-12 col-lg-6 mt-30">
+                            <div class="casestudy__box">
+                                <div class="casestudy__box--thumb">
+                                    <img src="assets/images/service/case-study-3.jpeg" alt="">
+                                </div>
+                                <div class="casestudy__box--content">
+                                    <h5 class="sub-title">Web Solutions</h5>
+                                    <h4 class="title">Kesemiro Web Solution</h4>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="col-xl-12 col-lg-6 mt-30">
+                            <div class="casestudy__box">
+                                <div class="casestudy__box--thumb">
+                                    <img src="assets/images/service/case-study-3.jpeg" alt="">
+                                </div>
+                                <div class="casestudy__box--content">
+                                    <h5 class="sub-title">Web Solutions</h5>
+                                    <h4 class="title">Kesemiro Web Solution</h4>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="swiper-slide">
+                        <div class="col-xl-12 col-lg-6 mt-30">
+                            <div class="casestudy__box">
+                                <div class="casestudy__box--thumb">
+                                    <img src="assets/images/service/case-study-3.jpeg" alt="">
+                                </div>
+                                <div class="casestudy__box--content">
+                                    <h5 class="sub-title">Web Solutions</h5>
+                                    <h4 class="title">Kesemiro Web Solution</h4>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+
+    
                     </div>
-                </div>
+                    {{-- <div class="swiper-button-next"></div> --}}
+                    {{-- <div class="swiper-button-prev"></div> --}}
+                    <div class="swiper-pagination" style="position: absolute;
+                    bottom: -6px;"></div>
+                  </div>
+    
+               
             </div>
+
+
+
+       
+
+
+            <div class="itstaffs__btns__works">
+                <a href="about.html" class="site-btn">Learn More <span>+</span></a>
+            </div>
+
+
         </div>
     </section>
     <!-- case study area end -->

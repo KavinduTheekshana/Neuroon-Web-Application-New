@@ -4501,6 +4501,7 @@ input.form-control-sm {
 
 .casestudy__box {
   position: relative;
+  padding-bottom: 35px;
 }
 .casestudy__box--thumb {
   overflow: hidden;
@@ -4515,6 +4516,7 @@ input.form-control-sm {
   transform: scale(1.1);
 }
 .casestudy__box--content {
+  cursor: pointer;
   background: #ffffff;
   padding: 25px;
   width: calc(100% - 50px);
@@ -4526,6 +4528,7 @@ input.form-control-sm {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  box-shadow: 1px 3px 6px 0px rgba(0,0,0,0.32) !important;
 }
 .casestudy__box--content::after, .casestudy__box--content::before {
   position: absolute;
@@ -5603,14 +5606,15 @@ input.form-control-sm {
 }
 
 .integration__icons--box {
+  cursor: pointer;
   position: absolute;
   width: 100px;
   height: 100px;
   font-size: 50px;
   text-align: center;
   line-height: 100px;
-  background: #ffffff;
-  color: #00CE62;
+  background: #00CE62;
+  color: #fff;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -5640,8 +5644,8 @@ input.form-control-sm {
   }
 }
 .integration__icons--box:hover {
-  color: #ffffff;
-  background: #00CE62;
+  color: #00CE62;
+  background: #fff;
 }
 .integration__icons--box:nth-child(1), .integration__icons--box:nth-child(3), .integration__icons--box:nth-child(4) {
   top: -25px;
@@ -7641,11 +7645,19 @@ input.form-control-sm {
 
 /*itstaffs css*/
 .itstaffs-area {
-  background: #00CE62;
+  background: #001D23;
   background-position: center center;
   background-repeat: no-repeat;
 }
-
+.itstaffs__btns__works{
+  justify-content: center !important;
+    margin-top: 40px;
+    display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .itstaffs__btns {
   display: -ms-flexbox;
   display: flex;
@@ -7665,7 +7677,7 @@ input.form-control-sm {
   }
 }
 .itstaffs__btns .site-btn {
-  background: #004189;
+  background: #00CE62;
 }
 .itstaffs__btns .site-btn:hover {
   background: #ffffff;
@@ -7678,7 +7690,7 @@ input.form-control-sm {
 .itstaffs__btns .transparent {
   background: transparent;
   margin-left: 20px;
-  border-color: #2179DC;
+  border-color: #00CE62;
 }
 @media (max-width: 767px) {
   .itstaffs__btns .transparent {
@@ -9623,3 +9635,18 @@ input.form-control-sm {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.swiper-pagination-bullet{
+  width: 9px !important;
+  height: 9px !important;
+  border-radius: 50% !important;
+
+  
+}
+.swiper-pagination-bullet-active{
+  background: #00CE62 !important;
+  width: 50px !important;
+  height: 8px !important;
+  border-radius: 5px !important;
+}

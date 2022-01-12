@@ -25,44 +25,46 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body>
-   <!--[if lt IE 8]>
+    <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- preloader  -->
-    <div id="preloader">
+    {{-- <div id="preloader">
         <div id="ctn-preloader" class="ctn-preloader">
             <div class="animation-preloader">
                 <div class="spinner"></div>
                 <div class="txt-loading">
-						<span data-text-preloader="T" class="letters-loading">
-							T
-						</span>
-						<span data-text-preloader="E" class="letters-loading">
-							E
-						</span>
-						<span data-text-preloader="C" class="letters-loading">
-							C
-						</span>
-						<span data-text-preloader="H" class="letters-loading">
-							H
-						</span>
-						<span data-text-preloader="B" class="letters-loading">
-							B
-						</span>
-						<span data-text-preloader="U" class="letters-loading">
-							U
-						</span>
-						<span data-text-preloader="Z" class="letters-loading">
-							Z
-						</span>
-						<span data-text-preloader="Z" class="letters-loading">
-							Z
-						</span>
-					</div>
+                    <span data-text-preloader="T" class="letters-loading">
+                        T
+                    </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                    <span data-text-preloader="C" class="letters-loading">
+                        C
+                    </span>
+                    <span data-text-preloader="H" class="letters-loading">
+                        H
+                    </span>
+                    <span data-text-preloader="B" class="letters-loading">
+                        B
+                    </span>
+                    <span data-text-preloader="U" class="letters-loading">
+                        U
+                    </span>
+                    <span data-text-preloader="Z" class="letters-loading">
+                        Z
+                    </span>
+                    <span data-text-preloader="Z" class="letters-loading">
+                        Z
+                    </span>
+                </div>
             </div>
             <div class="loader">
                 <div class="row">
@@ -81,105 +83,84 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- preloader end -->
 
-        <!-- header start -->
-        <header class="header">
-            <div class="header__top">
-                <div class="container-fluid">
-                     <div class="row">
-                         <div class="col-xl-6 col-lg-7 col-md-12">
-                             <div class="header__top--info">
-                                 <ul>
-                                     <li><a href="mailto:info@webmail.com"><span class="icon"><i class="fal fa-envelope"></i></span> info@neuroon.lk</a></li>
-                                     <li><a href="tel:9878768648765"><span class="icon"><i class="fal fa-phone"></i></span> +94 71 251 5020 | +94 71 399 6549</a></li>
-                                 </ul>
-                             </div>
-                         </div>
-                         {{-- <div class="col-xl-6 col-lg-5 col-md-12">
-                            <div class="header__top--info--right">
-                                <div class="lang">
-                                    <div class="lang__icon">
-                                        <a href="#0" class="lang__btn">English <i class="fal fa-angle-down"></i></a>
-                                        <ul class="lang__list">
-                                            <li><a href="#0">USA</a></li>
-                                            <li><a href="#0">UK</a></li>
-                                            <li><a href="#0">CA</a></li>
-                                            <li><a href="#0">AU</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="careers.html" class="job-btn"><i class="fal fa-briefcase"></i> Get Job Feeds</a>
-                            </div>
-                         </div> --}}
-                     </div>
-                </div>
-            </div>
-            <div class="navarea">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-2 col-lg-2 col-md-4 my-auto">
-                            <div class="header__logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logo/logo-sm-ex.png" width="170px">
-                                </a>
-                            </div>
+    <!-- header start -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 col-md-12">
+                        <div class="header__top--info">
+                            <ul>
+                                <li><a href="mailto:info@webmail.com"><span class="icon"><i
+                                                class="fal fa-envelope"></i></span> info@neuroon.lk</a></li>
+                                <li><a href="tel:9878768648765"><span class="icon"><i class="fal fa-phone"></i></span>
+                                        +94 71 251 5020 | +94 71 399 6549</a></li>
+                            </ul>
                         </div>
-                        <div class="col-xl-7 col-lg-7">
-                            <div class="header__menu">
-                                <nav id="mobile-menu">
-                                    <ul>
-                                        <li><a href="index.html">Home <span>+</span></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">Homepage 01</a></li>
-                                                <li><a href="index-02.html">Homepage 02</a></li>
-                                                <li><a href="index-03.html">Homepage 03</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="services.html">Services <span>+</span></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="service-details.html">Service Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#0">Pages <span>+</span></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="faq.html">Faq</a></li>
-                                                <li><a href="careers.html">Careers</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="team-details.html">Team Details</a></li>
-                                                <li><a href="why-choose.html">Why Choose</a></li>
-                                                <li><a href="portfolio.html">Portfolio</a></li>
-                                                <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="news.html">News</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="news.html">News</a></li>
-                                                <li><a href="news-details.html">News Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+                    <div class="col-xl-6 col-lg-5 col-md-12">
+                        <div class="header__top--info--right">
+                            {{-- <div class="lang">
+                                <div class="lang__icon">
+                                    <a href="#0" class="lang__btn">English <i class="fal fa-angle-down"></i></a>
+                                    <ul class="lang__list">
+                                        <li><a href="#0">USA</a></li>
+                                        <li><a href="#0">UK</a></li>
+                                        <li><a href="#0">CA</a></li>
+                                        <li><a href="#0">AU</a></li>
                                     </ul>
-                                </nav>
-                                <div class="mobile-menu"></div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
-                            <div class="navarea__right">
-                                <a href="contact.html" class="site-btn">Get A Quote <span>+</span></a>
-                                <button class="search-trigger">
-                                    <i class="fal fa-search"></i>
-                                </button>
-                            </div>
+                                </div>
+                            </div> --}}
+                            <a href="careers.html" class="job-btn"><i class="fal fa-briefcase"></i>&nbsp; Careers</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- header end -->
+        </div>
+        <div class="navarea">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-4 my-auto">
+                        <div class="header__logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo-fq.svg" width="170px">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="header__menu">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li><a href="contact.html">Home</a></li>
+                               
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="about.html">Services</a></li>
+                                    <li><a href="about.html">Blog</a></li>
+                                 
+                                  
+                                    
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
+                        <div class="navarea__right">
+                            <a href="contact.html" class="site-btn">Get A Quote <span>+</span></a>
+                            <button class="search-trigger">
+                                <i class="fal fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
 
     @yield('content')
 
@@ -191,7 +172,7 @@
             <div class="row">
                 <div class="col-xl-12 text-center">
                     <a href="index.html" class="site-logo mb-50">
-                        <img src="assets/images/logo/logo-sm-ex.png" alt="Logo" width="170px">
+                        <img src="assets/images/logo/logo-fq.svg" alt="Logo" width="170px">
                     </a>
                 </div>
                 <div class="col-xl-12">
@@ -203,7 +184,7 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title">Phone Number</h4>
-                                    <a href="tel:98787676576577">+987 876 765 76 577</a>
+                                    <a href="tel:98787676576577">+94 71 251 5020</a>
                                 </div>
                             </div>
                             <div class="footer__info--item d-flex align-items-center">
@@ -212,7 +193,7 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title">Email Address</h4>
-                                    <a href="mailto:info@webmail.com">info@webmail.com</a>
+                                    <a href="mailto:info@webmail.com">info@neuroon.com</a>
                                 </div>
                             </div>
                             <div class="footer__info--item d-flex align-items-center">
@@ -221,11 +202,14 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title">Office Address</h4>
-                                    <span>14/A, Miranda City, NYC</span>
+                                    <span>629/1,
+                                        Pinketha Road,
+                                        Homagama.</span>
                                 </div>
                             </div>
                         </div>
-                        <button id="scroll-top" class="site-btn transparent"><i class="fal fa-long-arrow-up"></i> <span>Back To Top</span> <i class="fal fa-long-arrow-up"></i></button>
+                        <button id="scroll-top" class="site-btn transparent"><i class="fal fa-long-arrow-up"></i>
+                            <span>Back To Top</span> <i class="fal fa-long-arrow-up"></i></button>
                     </div>
                 </div>
             </div>
@@ -258,24 +242,23 @@
                 </div>
                 <div class="col-xl-2 col-lg-6 col-sm-6 col-6 mt-30">
                     <div class="footer__widget">
-                        <h4 class="title mb-30">More Link</h4>
+                        <h4 class="title mb-30">Menu</h4>
                         <ul>
-                            <li><a href="#0">Pick up locations</a></li>
-                            <li><a href="#0">Terms of Payment</a></li>
-                            <li><a href="#0">Privacy Policy</a></li>
-                            <li><a href="#0">Where to Find Us</a></li>
+                            <li><a href="#0">Home</a></li>
+                            <li><a href="#0">About</a></li>
+                            <li><a href="#0">Services</a></li>
+                            <li><a href="#0">Contact</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-6 col-sm-6 col-6 mt-30">
                     <div class="footer__widget">
-                        <h4 class="title mb-30">Support</h4>
+                        <h4 class="title mb-30">Follow Us</h4>
                         <ul>
-                            <li><a href="#0">Forum Support</a></li>
-                            <li><a href="#0">Help & FAQ</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="services.html">Pricing and plans</a></li>
-                            <li><a href="#0">Cookies Policy</a></li>
+                            <li><a href="#0">Facebook</a></li>
+                            <li><a href="#0">Linkedin</a></li>
+                            <li><a href="contact.html">Youtube</a></li>
+                            <li><a href="services.html">Instagram</a></li>
                         </ul>
                     </div>
                 </div>
@@ -292,7 +275,7 @@
                                         <li><a href="#0"><i class="fal fa-calendar-alt"></i> 24th June 2020</a></li>
                                     </ul>
                                     <h4 class="title"><a href="news-details.html">We are specialists in both
-                                    economics and information</a></h4>
+                                            economics and information</a></h4>
                                 </div>
                             </div>
                             <div class="newsfeed__item">
@@ -304,7 +287,7 @@
                                         <li><a href="#0"><i class="fal fa-calendar-alt"></i> 24th June 2020</a></li>
                                     </ul>
                                     <h4 class="title"><a href="news-details.html">We are specialists in both
-                                    economics and information</a></h4>
+                                            economics and information</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +301,8 @@
                     <div class="copyright-text mt-60">
                         <div class="row">
                             <div class="col-xl-12 text-center">
-                                <p>Copyright By@Example - <span>2020</span></p>
+                                <p>© <span>2022</span> Neuroon Informatic |
+                                    All Rights Reserved </p>
                             </div>
                         </div>
                     </div>
@@ -359,6 +343,30 @@
     <script src="assets/js/waypoint.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfpGBFn5yRPvJrvAKoGIdj1O1aO9QisgQ"></script>
     <script src="assets/js/main.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 1,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    </script>
 </body>
 
 </html>
