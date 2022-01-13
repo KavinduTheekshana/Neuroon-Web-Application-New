@@ -30,8 +30,8 @@ Route::get('why', function () {
     return view('why');
 });
 
-Route::get('blog', function () {
-    return view('blog');
+Route::get('news', function () {
+    return view('news');
 });
 
 Route::get('portfolio', function () {
@@ -52,3 +52,7 @@ Route::get('faq', function () {
 Route::get('services', function () {
     return view('services');
 });
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');

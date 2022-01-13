@@ -14,8 +14,8 @@
                             <h1 class="heading">Advanced <br>Innovative <br>IT Solutions<span>.</span></h1>
                             <p style="letter-spacing: 2px">Let’s create impactful digital products</p>
                             <div class="buttons mt-35">
-                                <a href="contact.html" class="site-btn">Get In Touch <span>+</span></a>
-                                <a href="about.html" class="site-btn transparent">Learn More <span>+</span></a>
+                                <a href="contact" class="site-btn">Get In Touch <span>+</span></a>
+                                <a href="about" class="site-btn transparent">Learn More <span>+</span></a>
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore to magna
                         aliqua. Ut enim ad minim veniam, quis nostrud a exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor in reprehenderit.</p>
-                        <a href="about.html" class="site-btn mt-35">Learn More <span>+</span></a>
+                        <a href="about" class="site-btn mt-35">Learn More <span>+</span></a>
                     </div>
                 </div>
                 <div class="col-xl-6">
@@ -259,8 +259,8 @@
                             Possitive Response<span>.</span></h2>
                         </div>
                         <div class="cta__btns">
-                            <a href="services.html" class="site-btn">Our Service <span>+</span></a>
-                            <a href="about.html" class="site-btn white transparent">Learn More <span>+</span></a>
+                            <a href="services" class="site-btn">Our Service <span>+</span></a>
+                            <a href="about" class="site-btn white transparent">Learn More <span>+</span></a>
                         </div>
                     </div>
                 </div>
@@ -382,8 +382,8 @@
                                     <p>Polygon absolutely works great with tools in your other existing platform. <br>
                                     Now its time to leave a commnet here.</p>
                                     <div class="integration__btns mt-35">
-                                        <a href="services.html" class="site-btn">Our Service <span>+</span></a>
-                                        <a href="about.html" class="site-btn transparent">Learn More <span>+</span></a>
+                                        <a href="services" class="site-btn">Our Service <span>+</span></a>
+                                        <a href="about" class="site-btn transparent">Learn More <span>+</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -509,8 +509,8 @@
                     Experienced IT Staffs<span>.</span></h2>
                 </div>
                 <div class="itstaffs__btns">
-                    <a href="about.html" class="site-btn">Learn More <span>+</span></a>
-                    <a href="contact.html" class="site-btn white transparent">Make A Call <span><i class="fal fa-phone"></i></span></a>
+                    <a href="about" class="site-btn">Learn More <span>+</span></a>
+                    <a href="contact" class="site-btn white transparent">Make A Call <span><i class="fal fa-phone"></i></span></a>
                 </div>
             </div>
             {{-- <div class="col-xl-4 offset-xl-1">
@@ -710,7 +710,7 @@
 
 
             <div class="itstaffs__btns__works">
-                <a href="about.html" class="site-btn">Learn More <span>+</span></a>
+                <a href="portfolio" class="site-btn">Learn More <span>+</span></a>
             </div>
 
 

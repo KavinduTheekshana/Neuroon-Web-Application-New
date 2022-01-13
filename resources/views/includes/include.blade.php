@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>TechBuzz - Multipurpose Technology HTML5 Template</title>
+    <title>Neuroon Informatic - Let’s create impactful digital products</title>
 
     <!--====== Favicon ======-->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="images/x-icon" />
@@ -154,7 +154,7 @@
                                     {{-- <li><a href="about.html">Services</a></li> --}}
                                     <li><a href="portfolio" class="{{ Request::segment(1) === 'portfolio' ? 'active' : null }}">Portfolio</a></li>
                                     <li><a href="why" class="{{ Request::segment(1) === 'why' ? 'active' : null }}">Why us</a></li>
-                                    <li><a href="blog" class="{{ Request::segment(1) === 'blog' ? 'active' : null }}">Blog</a></li>
+                                    <li><a href="news" class="{{ Request::segment(1) === 'news' ? 'active' : null }}">News</a></li>
 
 
 
@@ -168,7 +168,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-8 my-auto d-none d-xl-block d-lg-block">
                         <div class="navarea__right">
-                            <a href="contact.html" class="site-btn">Get A Quote <span>+</span></a>
+                            <a href="contact" class="site-btn">Get A Quote <span>+</span></a>
                             <button class="search-trigger">
                                 <i class="fal fa-search"></i>
                             </button>
@@ -262,10 +262,11 @@
                     <div class="footer__widget">
                         <h4 class="title mb-30">Menu</h4>
                         <ul>
-                            <li><a href="#0">Home</a></li>
-                            <li><a href="#0">About</a></li>
-                            <li><a href="#0">Services</a></li>
-                            <li><a href="#0">Contact</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="about">About</a></li>
+                            <li><a href="services">Services</a></li>
+                            <li><a href="news">News</a></li>
+                            <li><a href="contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
