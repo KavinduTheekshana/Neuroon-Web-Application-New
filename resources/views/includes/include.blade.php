@@ -114,7 +114,7 @@
                                     </ul>
                                 </div>
                             </div> --}}
-                            <a href="careers.html" class="job-btn"><i class="fal fa-briefcase"></i>&nbsp; Careers</a>
+                            <a href="careers" class=" job-btn {{ Request::segment(1) === 'careers' ? 'active' : null }}"><i class="fal fa-briefcase"></i>&nbsp; Careers</a>
                         </div>
                     </div>
                 </div>
@@ -137,9 +137,20 @@
                                     <li><a href="/"
                                             class="{{ Request::segment(1) === null ? 'active' : null }}">Home</a></li>
 
-                                    <li><a href="about"
+                                    {{-- <li><a href="about"
                                             class="{{ Request::segment(1) === 'about' ? 'active' : null }}">About</a>
+                                    </li> --}}
+
+                                    <li><a href="about"
+                                            class="{{ Request::segment(1) === 'about' ? 'active' : null }}">About <span>+</span></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="about" class="{{ Request::segment(1) === 'about' ? 'active' : null }}">About</a></li>
+                                            <li><a href="services" class="{{ Request::segment(1) === 'services' ? 'active' : null }}">Services</a></li>
+                                            <li><a href="faq" class="{{ Request::segment(1) === 'faq' ? 'active' : null }}">Faq</a></li>
+                                        </ul>
                                     </li>
+
+
                                     {{-- <li><a href="about.html">Services</a></li> --}}
                                     <li><a href="portfolio" class="{{ Request::segment(1) === 'portfolio' ? 'active' : null }}">Portfolio</a></li>
                                     <li><a href="why" class="{{ Request::segment(1) === 'why' ? 'active' : null }}">Why us</a></li>

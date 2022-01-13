@@ -37,3 +37,18 @@ Route::get('blog', function () {
 Route::get('portfolio', function () {
     return view('portfolio');
 });
+
+
+Route::get('careers', function () {
+    return view('careers');
+});
+
+
+Route::get('faq', function () {
+    return view('faq');
+});
+
+
+Route::get('services', function () {
+    return view('services');
+});
